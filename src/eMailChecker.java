@@ -1,6 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
+import java.util.regex.Pattern;
 
 /**
  * Created by Josh on 5/12/17.
@@ -51,7 +52,7 @@ public class eMailChecker extends JFrame implements ActionListener{
     }
 
     public Boolean validateEmail(String email) {
-        return Boolean.TRUE;
+        return Pattern.matches(regex, email);
     }
 
     public static void main(String[] args) {
