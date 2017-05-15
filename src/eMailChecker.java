@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class eMailChecker extends JFrame implements ActionListener{
     String emailToValidate;
-    String regex = "[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]+";
+    String regex = "[A-Za-z0-9]+@[A-Za-z0-9]+[.][A-Za-z0-9]+";
 
     Color valid = new Color(1,83,42);
     Color invalid = new Color(147,0,15);
